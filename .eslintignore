@@ -1,0 +1,4 @@
+/dist
+/*.js
+setupTests.js
+*.test.js
