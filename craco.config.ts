@@ -86,11 +86,12 @@ const config: CracoConfig = {
         port: 3000,
         proxy: {
             "/api": {
-                target: "http://localhost:3001",
+                // target: "http://localhost:3001",
+                target: "http://localhost:4399",
                 changeOrigin: true,
-                pathRewrite: {
-                    "^/api": "",
-                },
+                // pathRewrite: {
+                //     "^/api": "",
+                // },
             },
         },
     },
