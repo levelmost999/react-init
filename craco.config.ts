@@ -54,6 +54,7 @@ const config: CracoConfig = {
                     },
                     {
                         test: /\.css$/,
+                        exclude: /node_modules/,
                         use: [
                             { loader: "style-loader" },
                             { loader: "css-loader" },
@@ -61,6 +62,7 @@ const config: CracoConfig = {
                     },
                     {
                         test: /\.less$/,
+                        exclude: /node_modules/,
                         use: [
                             { loader: "style-loader" },
                             { loader: "css-loader" },
